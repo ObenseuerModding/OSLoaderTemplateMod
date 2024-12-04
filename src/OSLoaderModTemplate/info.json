@@ -1,5 +1,5 @@
 {
-    "modType": 2, // Mod requiring dependency
+    "modType": 0,
     "name": "OS Loader Template Mod",
     "description": "This is a description!",
     "loadOnStart": true,
