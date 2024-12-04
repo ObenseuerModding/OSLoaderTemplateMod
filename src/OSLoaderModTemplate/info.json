@@ -1,0 +1,15 @@
+{
+    "modType": 2, // Mod requiring dependency
+    "name": "OS Loader Template Mod",
+    "description": "This is a description!",
+    "loadOnStart": true,
+    "repositoryUrl": "",
+    "modUrl": "",
+    "version": "1.0.0",
+    "modId": "dev.mamallama.OS.ModTemplate",
+    "author": "Robyn",
+    "dllFilepath": "OSLoaderModTemplate.dll",
+    "loaderVersion": "0.3.0",
+    "gameVersion": "0.3.0",
+    "dependencies": []
+}
