@@ -6,7 +6,8 @@ namespace OSLoaderModTemplate;
 
 public class OSModTemplatePlugin : Mod
 {
-    public static OSModTemplatePlugin Instance;
+    internal static OSModTemplatePlugin? Instance;
+    internal static OSLoader.Logger? PluginLog;
 
     public override void InitializeMod()
     {
@@ -15,13 +16,15 @@ public class OSModTemplatePlugin : Mod
 
         Instance = this;
         settings = new OSModLoaderTemplateSettings();
+        PluginLog = new(info.name, true);
+        PluginLog?.Log($"{info.name} is initializing");
     }
 
     public override void OnModInitialized()
     {
         //At this point the mod is loaded
         //The hierarchy and patching should be available here
-        Debug.Log($"{Instance.info.name} version {Instance.info.version} is loaded");
+        PluginLog?.Log($"{info.name} version {info.version} is loading");
     }
 
     public override bool UnloadMod()
